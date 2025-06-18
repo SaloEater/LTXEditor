@@ -1,0 +1,141 @@
+[
+  {
+    "name": "section 2 type",
+    "type": "regular",
+    "fields": [
+      {
+        "name": "single_value",
+        "type": "unknown",
+        "is_list": false
+      },
+      {
+        "name": "multi_value",
+        "type": "unknown",
+        "is_list": true
+      },
+      {
+        "name": "enabled",
+        "type": "boolean",
+        "is_list": false
+      },
+      {
+        "name": "blood",
+        "type": "file",
+        "is_list": false,
+        "file": {
+          "dir": "textures"
+        }
+      },
+      {
+        "name": "rating",
+        "type": "progression"
+      },
+      {
+        "name": "communities",
+        "type": "enum"
+      },
+      {
+        "name": "character_profile",
+        "type": "section",
+        "is_list": false
+      },
+      {
+        "name": "name",
+        "type": "translate_string",
+        "is_list": false
+      },
+      {
+        "name": "icon",
+        "type": "icon",
+        "is_list": false
+      },
+      {
+        "name": "functor",
+        "type": "functor",
+        "is_list": false
+      },
+      {
+        "name": "antirad",
+        "type": "slider",
+        "slider": {
+          "min": 0,
+          "max": 1,
+          "step": 0.01
+        }
+      },
+      {
+        "name": "my_condlist",
+        "type": "condlist",
+        "condlist": {
+          "return_type": "section"
+        }
+      },
+      {
+        "name": "starting",
+        "type": "mixed",
+        "fields": [
+          {
+            "alias": "time",
+            "type": "unknown"
+          },
+          {
+            "alias": "sound name",
+            "type": "file",
+            "file": {
+              "dir": "sounds"
+            }
+          },
+          {
+            "alias": "light R",
+            "type": "unknown"
+          },
+          {
+            "alias": "light G",
+            "type": "unknown"
+          },
+          {
+            "alias": "light B",
+            "type": "unknown"
+          },
+          {
+            "alias": "light range",
+            "type": "unknown"
+          },
+          {
+            "alias": "particle name",
+            "type": "file",
+            "file": {
+              "dir": "particles"
+            }
+          },
+          {
+            "alias": "artefact animation name",
+            "type": "unknown"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "trader list",
+    "type": "list",
+    "key": {
+      "type": "section"
+    },
+    "fields": [
+      {
+        "alias": "amount",
+        "type": "unknown"
+      },
+      {
+        "alias": "chance",
+        "type": "slider",
+        "slider": {
+          "min": 0,
+          "max": 1,
+          "step": 0.01
+        }
+      }
+    ]
+  }
+]
